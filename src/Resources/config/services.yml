@@ -139,7 +139,7 @@ services:
         class: FriendsOfSylius\SyliusImportExportPlugin\Exporter\Plugin\PluginPool
         arguments:
             - ["@sylius.exporter.plugin.resource.tax_categories"]
-            - ["Id", "Code" ,"Enabled"]
+            - ["Id", "Code" ,"Name", "Description"]
 
     sylius.exporter.pluginpool.customers:
         class: FriendsOfSylius\SyliusImportExportPlugin\Exporter\Plugin\PluginPool
