@@ -15,5 +15,5 @@ Feature: exporting tax categories to csv-file
     When I export "tax_category" data as "csv" to the file "tax_categories_export.csv" with the cli-command
     Then I should see "Exported" in the output
     And I should see in the file:
-      | Code  | Name  | Description        |
-      | cloth | Cloth | "Shirts and Jeans" |
+      | Code  | Name  | Description      |
+      | cloth | Cloth | Shirts and Jeans |

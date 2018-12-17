@@ -24,7 +24,7 @@ final class CliTaxCategoriesContext extends CliBaseContext
     /**
      * @Then /^(this tax category) name is "([^"]+)"$/
      */
-    public function thisTaxCategoryNameShouldBe(TaxCategoryInterface $taxCategory, $taxCategoryName)
+    public function thisTaxCategoryNameShouldBe(TaxCategoryInterface $taxCategory, $taxCategoryName): void
     {
         $taxCategory->setName($taxCategoryName);
     }
@@ -32,7 +32,7 @@ final class CliTaxCategoriesContext extends CliBaseContext
     /**
      * @Then /^(this tax category) description is "([^"]+)"$/
      */
-    public function thisTaxCategoryDescriptionShouldBe(TaxCategoryInterface $taxCategory, $taxCategoryName)
+    public function thisTaxCategoryDescriptionShouldBe(TaxCategoryInterface $taxCategory, $taxCategoryName): void
     {
         $taxCategory->setDescription($taxCategoryName);
     }

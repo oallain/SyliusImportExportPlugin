@@ -60,7 +60,7 @@
         "bin-dir": "bin"
     },
     "conflict": {
-        "sonata-project/core-bundle": ">=3.12"
+        "sonata-project/core-bundle": ">=3.12 <3.13.4"
     },
     "extra": {
         "branch-alias": {
