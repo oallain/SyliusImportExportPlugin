@@ -136,7 +136,7 @@ final class ProductProcessor implements ResourceProcessorInterface
     public function process(array $data): void
     {
         $this->attrCode = $this->attributeCodesProvider->getAttributeCodesList();
-        $this->imageCode = $this->imageTypesProvider->getProductImagesCodesList();
+        $this->imageCode = $this->imageTypesProvider->getProductImagesCodesWithPrefixList();
 
         $this->headerKeys = \array_merge($this->headerKeys, $this->attrCode);
         $this->headerKeys = \array_merge($this->headerKeys, $this->imageCode);
