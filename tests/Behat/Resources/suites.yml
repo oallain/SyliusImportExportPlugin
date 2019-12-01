@@ -140,6 +140,17 @@ default:
         cli_managing_orders:
             contexts:
                 - sylius.behat.context.hook.doctrine_orm
+
+                - sylius.behat.context.setup.channel
+                - sylius.behat.context.setup.currency
+                - sylius.behat.context.setup.order
+                - sylius.behat.context.setup.payment
+                - sylius.behat.context.setup.product
+                - sylius.behat.context.setup.shipping
+
+                - sylius.behat.context.transform.lexical
+                - sylius.behat.context.transform.shared_storage
+
                 - test.behat.context.cli_orders_context
                 - sylius.behat.context.cli.installer
             filters:

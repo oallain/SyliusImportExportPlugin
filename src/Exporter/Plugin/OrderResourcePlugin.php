@@ -45,6 +45,8 @@ class OrderResourcePlugin extends ResourcePlugin
 
         /** @var OrderInterface $resource */
         foreach ($this->resources as $resource) {
+            $this->addDataForResource($resource, 'Created_at', $resource->getCreatedAt());
+
             // insert customer information to specific fields
             $this->addCustomerData($resource);
 
